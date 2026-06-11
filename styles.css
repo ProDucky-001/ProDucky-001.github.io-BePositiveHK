@@ -343,6 +343,54 @@ nav a[aria-current="page"] {
   padding: 14px 16px;
 }
 
+.team-member--profile {
+  padding: 0;
+  overflow: hidden;
+}
+
+.team-member__photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center top;
+  background: var(--card);
+}
+
+.team-section--advisors .team-member__photo {
+  aspect-ratio: auto;
+  height: auto;
+  max-height: 320px;
+  object-fit: contain;
+  object-position: center;
+  padding: 10px;
+}
+
+.team-member__body {
+  padding: 14px 16px 16px;
+}
+
+.team-member--profile h4 {
+  margin: 0 0 4px;
+}
+
+.team-member .bio {
+  margin: 10px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.team-grid--profiles {
+  gap: 16px;
+}
+
+@media (min-width: 700px) {
+  .team-grid--profiles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .team-member h4 {
   margin: 0 0 4px;
   font-size: 15px;
