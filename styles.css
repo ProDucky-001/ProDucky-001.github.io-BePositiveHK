@@ -366,6 +366,12 @@ nav a[aria-current="page"] {
   padding: 10px;
 }
 
+.team-grid--compact .team-member--profile .team-member__photo {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center top;
+}
+
 .team-member__body {
   padding: 14px 16px 16px;
 }
