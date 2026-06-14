@@ -6,7 +6,20 @@
     <title>Meet Our Team - Be Positive HK</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="is-loading">
+    <div id="page-loader" class="page-loader" role="status" aria-live="polite" aria-label="Loading Be Positive HK">
+      <div class="loader">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="logo">
+          <img src="images/be-positive-logo.jpeg" alt="" width="120" height="120" />
+        </div>
+      </div>
+    </div>
+
     <a class="skip-link" href="#main">Skip to main content</a>
 
     <header>
@@ -588,10 +601,19 @@
 
           <section class="section-card" aria-labelledby="get-involved-title">
             <h2 id="get-involved-title">Get involved:</h2>
-            <div class="list-links">
-              <a href="https://www.instagram.com/bepositive.hk_/" target="_blank" rel="noreferrer">Instagram: @bepositive.hk_</a>
-              <a href="mailto:bepositivehk07@gmail.com">Gmail: bepositivehk07@gmail.com</a>
-              <a href="https://www.youtube.com/@BePositiveHK" target="_blank" rel="noreferrer">YouTube Channel</a>
+            <div class="list-links list-links--buttons">
+              <a class="cssbuttons-io-button" href="https://www.instagram.com/bepositive.hk_/" target="_blank" rel="noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M1 14.5a6.496 6.496 0 0 1 3.064-5.519 8.001 8.001 0 0 1 15.872 0 6.5 6.5 0 0 1-2.936 12L7 21c-3.356-.274-6-3.078-6-6.5zm15.848 4.487a4.5 4.5 0 0 0 2.03-8.309l-.807-.503-.12-.942a6.001 6.001 0 0 0-11.903 0l-.12.942-.805.503a4.5 4.5 0 0 0 2.029 8.309l.173.013h9.35l.173-.013zM13 12h3l-4 5-4-5h3V8h2v4z"></path></svg>
+                <span>Instagram: @bepositive.hk_</span>
+              </a>
+              <a class="cssbuttons-io-button" href="mailto:bepositivehk07@gmail.com">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M1 14.5a6.496 6.496 0 0 1 3.064-5.519 8.001 8.001 0 0 1 15.872 0 6.5 6.5 0 0 1-2.936 12L7 21c-3.356-.274-6-3.078-6-6.5zm15.848 4.487a4.5 4.5 0 0 0 2.03-8.309l-.807-.503-.12-.942a6.001 6.001 0 0 0-11.903 0l-.12.942-.805.503a4.5 4.5 0 0 0 2.029 8.309l.173.013h9.35l.173-.013zM13 12h3l-4 5-4-5h3V8h2v4z"></path></svg>
+                <span>Gmail: bepositivehk07@gmail.com</span>
+              </a>
+              <a class="cssbuttons-io-button" href="https://www.youtube.com/@BePositiveHK" target="_blank" rel="noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M1 14.5a6.496 6.496 0 0 1 3.064-5.519 8.001 8.001 0 0 1 15.872 0 6.5 6.5 0 0 1-2.936 12L7 21c-3.356-.274-6-3.078-6-6.5zm15.848 4.487a4.5 4.5 0 0 0 2.03-8.309l-.807-.503-.12-.942a6.001 6.001 0 0 0-11.903 0l-.12.942-.805.503a4.5 4.5 0 0 0 2.029 8.309l.173.013h9.35l.173-.013zM13 12h3l-4 5-4-5h3V8h2v4z"></path></svg>
+                <span>YouTube Channel</span>
+              </a>
             </div>
           </section>
         </aside>
@@ -601,5 +623,7 @@
     <footer class="footer">
       Copyright © <strong>Be Positive HK</strong> 2026
     </footer>
+
+    <script src="loader.js"></script>
   </body>
 </html>
