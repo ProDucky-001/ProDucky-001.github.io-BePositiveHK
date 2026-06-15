@@ -567,9 +567,9 @@ a.team-member:hover {
 
 .team-member__photo {
   display: block;
-  width: auto;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  max-height: 150px;
+  object-fit: contain;
   background: linear-gradient(180deg, var(--accent-soft) 0%, var(--bg) 100%);
 }
 
@@ -665,8 +665,7 @@ a.team-member:hover {
 }
 
 .profile-detail__photo {
-  width: auto;
-  max-width: 100%;
+  max-width: 60%;
   height: auto;
   background: linear-gradient(180deg, var(--accent-soft) 0%, var(--bg) 100%);
   display: block;
