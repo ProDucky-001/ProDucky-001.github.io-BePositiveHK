@@ -7,7 +7,7 @@ A static informational website for **Be Positive HK**, a student-led youth menta
 | Page | Description |
 |---|---|
 | **Home** (`index.html`) | Hero section, about us, 2026–2027 highlights, awards & media coverage, latest video, Instagram link |
-| **Meet Our Team** (`team.html`) | Full team roster with photos, roles, and affiliations across 6 groups |
+| **Meet Our Team** (`team.html`) | Full team roster with clickable cards (photo, name, role, affiliation) across 6 groups in a 2‑column grid; each member links to a dedicated profile page at `team/NAME.html` with a full bio |
 | **Events & Interviews** (`events.html`) | Upcoming events, interview schedule, and YouTube video gallery |
 | **General Posts** (`posts.html`) | Instagram Psychology Research Series schedule (15 weekly posts) |
 | **Special Projects** (`projects.html`) | Annual programme breakdown: booths, summit, interview series, research |
@@ -46,15 +46,16 @@ No build step required.
 ├── loader.js            # Page loading screen script
 ├── videos.js            # YouTube video data
 ├── render-videos.js     # YouTube embed renderer
+├── team/                # Individual profile pages (30 members)
 ├── images/
 │   ├── be-positive-logo.jpeg
-│   └── team/            # Team member photos (~25 images)
+│   └── team/            # Team member photos (~26 images)
 └── package.json         # Minimal (vestigial dependency only)
 ```
 
 ## Accessibility
 
-The site uses semantic HTML, ARIA labels, a skip-link, `prefers-reduced-motion` support, and lazy-loaded images and iframes.
+The site uses semantic HTML, ARIA labels, a skip-link, `prefers-reduced-motion` support, and lazy-loaded images and iframes. Members without photos are shown initials‑based avatar placeholders.
 
 ## Live Site
 
